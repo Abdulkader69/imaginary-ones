@@ -8,8 +8,8 @@ import DreamBigVideo from '../assets/videos/dream-big.mp4';
 
 const ImaginaryValues = () => {
   return (
-    <div className="imaginary-values-wrapper bg-[rgb(255,248,243)] overflow-hidden relative pt-12">
-      <h2 className="text-center text-[136px] text-[rgb(132,89,255)] py-12 leading-[1] font-filson uppercase font-extrabold">
+    <div className="imaginary-values-wrapper bg-[rgb(255,248,243)] overflow-hidden relative">
+      <h2 className="text-center text-[136px] text-[rgb(132,89,255)] pb-12 pt-32 leading-[1] font-filson uppercase font-extrabold">
         Imaginary Values?
       </h2>
       <div className="flex flex-wrap justify-center">

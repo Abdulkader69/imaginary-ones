@@ -4,6 +4,8 @@ import BannerVideo from '../src/components/BannerVideo';
 import Characters from '../src/components/Characters';
 import ImaginaryValues from '../src/components/ImaginaryValues';
 import Why from '../src/components/Why';
+import ImaginaryTeam from '../src/components/ImaginaryTeam';
+import FAQ from '../src/components/FAQ';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +20,8 @@ const Home: NextPage = () => {
       <Why />
       <Characters />
       <ImaginaryValues />
+      <ImaginaryTeam />
+      <FAQ />
     </div>
   );
 };

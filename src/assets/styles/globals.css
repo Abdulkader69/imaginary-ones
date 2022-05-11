@@ -306,3 +306,24 @@ a {
     transform: translateX(-100%);
   }
 }
+.rainbow-text svg {
+  width: calc(100% + 4px);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: calc(100% + 4px);
+}
+.rainbow-text svg rect {
+  fill: #fff;
+}
+.rainbow-text svg > rect {
+  fill: #fbf2ff;
+  -webkit-mask: url(#maskblack);
+  mask: url(#maskblack);
+}
+.rainbow-text svg text {
+  font-size: 8rem;
+  font-family: 'FilsonSoft';
+  font-weight: 900;
+  text-transform: uppercase;
+}

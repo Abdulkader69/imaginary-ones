@@ -6,6 +6,8 @@ import ImaginaryValues from '../src/components/ImaginaryValues';
 import Why from '../src/components/Why';
 import ImaginaryTeam from '../src/components/ImaginaryTeam';
 import FAQ from '../src/components/FAQ';
+import Community from '../src/components/Community';
+import Good from '../src/components/Good';
 
 const Home: NextPage = () => {
   return (
@@ -17,11 +19,13 @@ const Home: NextPage = () => {
       </Head>
 
       <BannerVideo />
+      <Good />
       <Why />
       <Characters />
       <ImaginaryValues />
       <ImaginaryTeam />
       <FAQ />
+      <Community />
     </div>
   );
 };

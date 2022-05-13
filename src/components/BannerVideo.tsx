@@ -7,7 +7,10 @@ import BannerVideoMP4M from '../assets/videos/key-visual-mobile.mp4';
 const BannerVideo = () => {
   return (
     <>
-      <div className="home-banner-wrapper relative w-full h-screen flex items-center justify-center overflow-hidden">
+      <div
+        id="first-section"
+        className="home-banner-wrapper relative w-full h-screen flex items-center justify-center overflow-hidden"
+      >
         <video
           className="absolute top-0 left-0 right-0 m-auto scale-105 object-cover w-full h-full transition ease-in-out hidden md:block"
           autoPlay

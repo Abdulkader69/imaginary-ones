@@ -10,8 +10,16 @@ const FAQ = () => {
         <Disclosure>
           {({ open }) => (
             <div className="py-10 border-t border-b border-solid border-black/20">
-              <Disclosure.Button className="py-4 px-6 text-2xl font-filson font-bold text-black">
-                Who&rsquo;s the team behind imaginary ones?
+              <Disclosure.Button className="py-4 px-6 text-2xl font-filson font-bold text-black flex justify-between items-center w-full">
+                <span>Who&rsquo;s the team behind imaginary ones?</span>
+                <span className="btn h-[20px] w-[20px]">
+                  <div className="h-[2px] w-[20px] bg-black relative top-[9px]"></div>
+                  <div
+                    className={`h-[1px] w-[20px] bg-black relative top-2 transition ease-in ${
+                      open ? 'rotate-0 opacity-0' : 'rotate-90 opacity-100'
+                    }`}
+                  ></div>
+                </span>
               </Disclosure.Button>
               <Transition
                 show={open}
@@ -54,8 +62,16 @@ const FAQ = () => {
         <Disclosure>
           {({ open }) => (
             <div className="py-10 border-t border-b border-solid border-black/20">
-              <Disclosure.Button className="py-4 px-6 text-2xl font-filson font-bold text-black">
-                What makes imaginary ones so unique?
+              <Disclosure.Button className="py-4 px-6 text-2xl font-filson font-bold text-black flex justify-between items-center w-full">
+                <span>What makes imaginary ones so unique?</span>
+                <span className="btn h-[20px] w-[20px]">
+                  <div className="h-[2px] w-[20px] bg-black relative top-[9px]"></div>
+                  <div
+                    className={`h-[1px] w-[20px] bg-black relative top-2 transition ease-in ${
+                      open ? 'rotate-0 opacity-0' : 'rotate-90 opacity-100'
+                    }`}
+                  ></div>
+                </span>
               </Disclosure.Button>
               <Transition
                 show={open}

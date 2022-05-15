@@ -293,6 +293,10 @@ a {
     calc(16.25rem * 7) 0 currentColor, calc(16.25rem * 8) 0 currentColor,
     calc(16.25rem * 9) 0 currentColor, calc(16.25rem * 10) 0 currentColor;
 }
+.txt-shadow2 {
+  text-shadow: 9ch 0 currentColor, calc(9ch * 2) 0 currentColor,
+    calc(9ch * 3) 0 currentColor, calc(9ch * 4) 0 currentColor;
+}
 @-webkit-keyframes marquee {
   0% {
     transform: translateX(0);
@@ -463,6 +467,26 @@ a {
   to {
     transform: perspective(600px) rotateX(1turn);
   }
+}
+.good .rainbow-text svg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.good .rainbow-text svg rect {
+  fill: #fff;
+}
+.good .rainbow-text svg > rect {
+  fill: #8459ff;
+  -webkit-mask: url(#mask);
+  mask: url(#mask);
+}
+.good .rainbow-text svg text {
+  font-size: 2vw;
+  font-weight: 800;
+  font-style: italic;
 }
 
 @media screen and (min-width: 1024px) {

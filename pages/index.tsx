@@ -8,6 +8,7 @@ import ImaginaryTeam from '../src/components/ImaginaryTeam';
 import FAQ from '../src/components/FAQ';
 import Community from '../src/components/Community';
 import Good from '../src/components/Good';
+import What from '../src/components/What';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       </Head>
 
       <BannerVideo />
+      <What />
       <Good />
       <Why />
       <Characters />

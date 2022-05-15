@@ -54,19 +54,15 @@ const Community = () => {
             </li>
           </ul>
         </div>
-        <div className="why-item floating absolute top-0 left-0 w-full h-full duration1">
-          <div className="absolute top-0 -left-[150px]">
-            <img src={BallBeige.src} alt="BallPink" />
-          </div>
+        <div className="why-item floating absolute top-0 -left-[150px] duration1">
+          <img src={BallBeige.src} alt="BallPink" />
         </div>
-        <div className="why-item floating absolute top-0 left-0 w-full h-full duration2">
-          <div className="absolute w-[540px] -right-[150px] -bottom-[150px]">
-            <img
-              src={BallPurple.src}
-              alt="BallLightGreen"
-              className="w-[450px]"
-            />
-          </div>
+        <div className="why-item floating absolute w-[540px] -right-[150px] -bottom-[150px] duration2">
+          <img
+            src={BallPurple.src}
+            alt="BallLightGreen"
+            className="w-[450px]"
+          />
         </div>
       </div>
       <div className="collection-marquee relative overflow-auto py-5 w-full bg-white">

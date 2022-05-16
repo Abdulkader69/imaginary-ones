@@ -326,18 +326,18 @@ export default function Header() {
               </li>
               <li
                 className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[2.75rem] font-filson font-semibold uppercase group ${
-                  router.pathname == '/imaginary'
+                  router.pathname == '/imaginary-world'
                     ? 'text-black active'
                     : 'text-white'
                 }`}
               >
                 <span className="bg absolute top-0 left-0 w-full h-full bg-[#fd0] -z-10 transition ease-in translate-y-[110%] group-hover:translate-y-0"></span>
                 <span className="text leading-3 relative top-1 transition ease-in group-hover:text-black">
-                  <Link href="/">Imaginary World</Link>
+                  <Link href="/imaginary-world">Imaginary World</Link>
                 </span>
               </li>
               <li
-                className={`comming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'
@@ -363,7 +363,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`comming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'
@@ -377,7 +377,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`comming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'
@@ -391,7 +391,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`comming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'

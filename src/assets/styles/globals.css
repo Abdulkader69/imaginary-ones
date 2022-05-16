@@ -530,6 +530,20 @@ ul.main-nav li.active span.bg {
 .menu-wrapper .side-bar::-webkit-scrollbar {
   display: none;
 }
+.phase .sidebar::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 10px;
+  background-color: #fff;
+}
+.phase.phase-one .sidebar::before {
+  top: 10%;
+  height: 100%;
+}
+.phase .sidebar.left::before {
+  left: 50%;
+}
 
 @media screen and (min-width: 1024px) {
   .join-title .hat {

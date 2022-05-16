@@ -4,10 +4,14 @@ import BallPink from '../assets/images/ball-beige.png';
 import BallLightGreen from '../assets/images/ball-purple.png';
 import Frankenstein from '../assets/images/frankenstein.png';
 import Mummy from '../assets/images/mummy.png';
+import Astronaut from '../assets/images/astronaut-2.png';
+import RedHood from '../assets/images/red-riding-hood.png';
+import Skeletor from '../assets/images/skeletor.png';
 
 const What = () => {
   const [changeImage, setChangeImage] = useState<boolean>(false);
   const [changeImage2, setChangeImage2] = useState<boolean>(false);
+  const [changeImage3, setChangeImage3] = useState<boolean>(false);
   return (
     <div className="why-section py-80 bg-[#8459ff] relative overflow-hidden">
       <div className="first-layer relative max-w-[1500px] m-auto px-7 z-20">
@@ -78,21 +82,35 @@ const What = () => {
             onClick={() => setChangeImage((prevMode) => !prevMode)}
           >
             <img
-              src={changeImage ? Frankenstein.src : Mummy.src}
+              src={changeImage ? Frankenstein.src : Astronaut.src}
               alt="Frankenstein"
               className="rotate-[15deg] pointer-events-none"
             />
           </div>
         </Draggable>
       </div>
-      <div className="why-item floating absolute bottom-[5%] left-[2%] w-[360px] h-[360px] duration4 z-10">
+      <div className="why-item floating absolute left-[30%] top-[3%] w-[320px] h-[320px] duration3 z-10">
+        <Draggable defaultPosition={{ x: 0, y: 0 }}>
+          <div
+            className="absolute cursor-pointer"
+            onClick={() => setChangeImage3((prevMode) => !prevMode)}
+          >
+            <img
+              src={changeImage3 ? Frankenstein.src : Skeletor.src}
+              alt="Frankenstein"
+              className="rotate-[15deg] pointer-events-none"
+            />
+          </div>
+        </Draggable>
+      </div>
+      <div className="why-item floating absolute bottom-0 left-[2%] w-[360px] h-[360px] duration4 z-10">
         <Draggable defaultPosition={{ x: 0, y: 0 }}>
           <div
             className="absolute cursor-pointer"
             onClick={() => setChangeImage2((prevMode) => !prevMode)}
           >
             <img
-              src={changeImage2 ? Mummy.src : Frankenstein.src}
+              src={changeImage2 ? Mummy.src : RedHood.src}
               alt="Mummy"
               className="rotate-[-5deg] delay-500 pointer-events-none"
             />

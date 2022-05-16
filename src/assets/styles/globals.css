@@ -3,146 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftBlackRegular.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftBlackRegular.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftLightItalic.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftLightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft Book';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftBookRegular.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftBookRegular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftMediumRegular.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftMediumRegular.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftHeavyRegular.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftHeavyRegular.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftBold.woff2') format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftBookItalic.woff2') format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftBookItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftBlackItalic.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftBlackItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftLightRegular.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftLightRegular.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftBoldItalic.woff2') format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftBoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftHeavyItalic.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftHeavyItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftThinRegular.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftThinRegular.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftRegularItalic.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftRegularItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftRegularRegular.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftRegularRegular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftThinItalic.woff2') format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'FilsonSoft';
-  src: url('../fonts/FONTSPRINGDEMO-FilsonSoftMediumItalic.woff2')
-      format('woff2'),
-    url('../fonts/FONTSPRINGDEMO-FilsonSoftMediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
   font-family: 'NeuzeitGrotesk';
   src: url('../fonts/NeuzeitGro-Lig.woff2') format('woff2'),
     url('../fonts/NeuzeitGro-Lig.woff') format('woff');
@@ -190,8 +50,136 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-BlackItalic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Bold.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Black.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Book.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-BoldItalic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Heavy.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-BookItalic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-BookItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-HeavyItalic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-HeavyItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Medium.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Italic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Light.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-LightItalic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Regular.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-MediumItalic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-Thin.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Filson Soft';
+  src: url('../fonts/FilsonSoft-ThinItalic.woff2') format('woff2'),
+    url('../fonts/FilsonSoft-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
 .font-filson {
-  font-family: 'FilsonSoft';
+  font-family: 'Filson Soft';
 }
 .font-neu {
   font-family: 'NeuzeitGrotesk';
@@ -330,7 +318,7 @@ a {
 }
 .rainbow-text svg text {
   font-size: 8rem;
-  font-family: 'FilsonSoft';
+  font-family: 'Filson Soft';
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -372,7 +360,7 @@ a {
 }
 
 .good__rotating-text {
-  font-family: 'FilsonSoft';
+  font-family: 'Filson Soft';
   font-size: 4vw;
   font-weight: 800;
   text-transform: uppercase;
@@ -397,7 +385,7 @@ a {
     rotating;
 }
 .good__rotating-text .rotating-text .text {
-  font-family: 'FilsonSoft';
+  font-family: 'Filson Soft';
   display: flex;
   text-align: center;
   place-content: center;
@@ -487,6 +475,60 @@ a {
   font-size: 2vw;
   font-weight: 800;
   font-style: italic;
+}
+.animation-sound {
+  animation: sound 0ms linear -0.8s infinite alternate;
+}
+@-webkit-keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 3px;
+  }
+  to {
+    opacity: 1;
+    height: 24px;
+  }
+}
+@keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 3px;
+  }
+  to {
+    opacity: 1;
+    height: 24px;
+  }
+}
+.music-bar .bars span:first-child {
+  left: 1px;
+  -webkit-animation-duration: 474ms;
+  animation-duration: 474ms;
+}
+.music-bar .bars span:nth-child(2) {
+  left: 6px;
+  -webkit-animation-duration: 433ms;
+  animation-duration: 433ms;
+}
+.music-bar .bars span:nth-child(3) {
+  left: 11px;
+  -webkit-animation-duration: 407ms;
+  animation-duration: 407ms;
+}
+.music-bar .bars span:nth-child(4) {
+  left: 16px;
+  -webkit-animation-duration: 427ms;
+  animation-duration: 427ms;
+}
+.music-bar .bars span:nth-child(5) {
+  left: 21px;
+  -webkit-animation-duration: 419ms;
+  animation-duration: 419ms;
+}
+ul.main-nav li.active span.bg {
+  transform: translateY(0);
+}
+.menu-wrapper .side-bar::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {

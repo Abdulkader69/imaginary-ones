@@ -13,13 +13,13 @@ const Good = () => {
           <div className="w-1/3 flex items-center justify-center bg-[#e3a8ff] py-40">
             <div className="good__rotating-text">
               We are going to
-              <span className="rotating-text">
+              <div className="rotating-text">
                 <span className="text text-1">make</span>
                 <span className="text text-2">moon</span>
                 <span className="text text-3">love</span>
                 <span className="text text-4">enjoy</span>
                 <span className="text text-5">learn</span>
-              </span>
+              </div>
               it
               <span className="font-neu inline-block leading-0 relative top-6">
                 ~

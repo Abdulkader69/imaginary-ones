@@ -536,6 +536,7 @@ ul.main-nav li.active span.bg {
   display: block;
   width: 10px;
   background-color: #fff;
+  z-index: -1;
 }
 .phase.phase-one .sidebar::before {
   top: 10%;
@@ -543,6 +544,91 @@ ul.main-nav li.active span.bg {
 }
 .phase .sidebar.left::before {
   left: 50%;
+}
+.phase .media::before,
+.phase .media::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 175px;
+  height: 175px;
+  z-index: -1;
+}
+.phase.phase-one .media::before {
+  top: -20%;
+  left: 10%;
+  border-bottom-left-radius: 70px;
+  border-color: transparent transparent #fff #fff;
+  border-style: solid;
+  border-width: 10px;
+}
+.phase.phase-one .media::after {
+  bottom: 0;
+  right: 10%;
+  border-top-right-radius: 70px;
+  border-color: #fff #fff transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+}
+.phase .media .media-list::after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  top: 38%;
+}
+.phase.phase-two .sidebar::before {
+  height: 120%;
+  top: -10%;
+  left: 46.4%;
+}
+.phase.phase-three .media::before {
+  bottom: 10%;
+  border-top-left-radius: 70px;
+  border-color: #fff transparent transparent #fff;
+  border-style: solid;
+  border-width: 10px;
+  left: 10%;
+}
+.phase.phase-three .media::after {
+  top: 0;
+  right: 10%;
+  border-bottom-right-radius: 70px;
+  border-color: transparent #fff #fff transparent;
+  border-style: solid;
+  border-width: 10px;
+}
+.phase.phase-three .media .media-list::after {
+  top: 59%;
+}
+.phase.phase-three .sidebar::before {
+  height: 130%;
+  top: -15%;
+}
+.phase.phase-four .sidebar::before {
+  height: 200%;
+  left: 46.4%;
+  top: -70%;
+}
+.phase.phase-five .media::after {
+  top: 0;
+  right: 10%;
+  border-bottom-right-radius: 70px;
+  border-color: transparent #fff #fff transparent;
+  border-style: solid;
+  border-width: 10px;
+}
+.phase.phase-five .media .media-list::after {
+  left: 0;
+  width: 80%;
+  top: 41%;
+}
+.phase.phase-five .sidebar::before {
+  height: 100%;
+  left: 50%;
+  top: -20%;
 }
 
 @media screen and (min-width: 1024px) {

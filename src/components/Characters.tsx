@@ -11,7 +11,7 @@ const Characters = () => {
       <div className="first-layer w-full max-w-5xl m-auto px-7 py-36">
         <h2 className="text-9xl font-filson font-extrabold uppercase text-center">
           <span className="inline-block pt-2 pr-5">8888</span>
-          <span className="rainbow-text inline-block align-top leading-[1.2] relative w-[594px] h-[140px]">
+          <div className="rainbow-text inline-block align-top leading-[1.2] relative w-[594px] h-[140px]">
             <video
               className="relative m-auto w-full h-full object-cover transition ease-in-out"
               autoPlay
@@ -42,7 +42,7 @@ const Characters = () => {
               </defs>
               <rect x="0" y="0" width="100%" height="100%"></rect>
             </svg>
-          </span>
+          </div>
           <br />
           characters
         </h2>

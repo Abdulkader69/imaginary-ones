@@ -16,7 +16,7 @@ const What = () => {
     <div className="why-section py-80 bg-[#8459ff] relative overflow-hidden">
       <div className="first-layer relative max-w-[1500px] m-auto px-7 z-20">
         <h2 className="headline text-9xl font-filson text-white font-extrabold uppercase">
-          <span className="block relative">
+          <div className="block relative">
             <div className="inline-block relative mr-8">
               <div className=" inline-block">W</div>
               <div className=" inline-block">h</div>
@@ -27,8 +27,8 @@ const What = () => {
               <div className="relative inline-block">i</div>
               <div className="relative inline-block">s</div>
             </div>
-          </span>
-          <span className="block relative text-[#fd0]">
+          </div>
+          <div className="block relative text-[#fd0]">
             <div className="inline-block relative mr-8">
               <div className="relative inline-block">I</div>
               <div className="relative inline-block">m</div>
@@ -47,7 +47,7 @@ const What = () => {
               <div className="relative inline-block">s</div>
               <div className="relative inline-block">?</div>
             </div>
-          </span>
+          </div>
         </h2>
         <div className="why-text text-[2rem] text-white mt-8 leading-[1.4]">
           <p className="mb-8">

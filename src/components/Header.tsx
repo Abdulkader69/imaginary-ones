@@ -352,14 +352,14 @@ export default function Header() {
               </li>
               <li
                 className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[2.75rem] font-filson font-semibold uppercase group ${
-                  router.pathname == '/imaginary'
+                  router.pathname == '/careers'
                     ? 'text-black active'
                     : 'text-white'
                 }`}
               >
                 <span className="bg absolute top-0 left-0 w-full h-full bg-[#fd0] -z-10 transition ease-in translate-y-[110%] group-hover:translate-y-0"></span>
                 <span className="text leading-3 relative top-1 transition ease-in group-hover:text-black">
-                  <Link href="/">Careers</Link>
+                  <Link href="/careers">Careers</Link>
                 </span>
               </li>
               <li

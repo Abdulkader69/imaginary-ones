@@ -746,15 +746,14 @@ ul.main-nav li.active span.bg {
 #scene .why-item.five img {
   filter: blur(2px);
 }
+@media screen and (min-width: 768px) {
+  #loading-screen-wrap #scene .why-item {
+    display: inline-block !important;
+  }
+}
 #scene .why-item.one,
 #scene .why-item.four {
   display: none !important;
-}
-
-@media screen and (min-width: 768px) {
-  #scene .why-item {
-    display: inline-block !important;
-  }
 }
 @media screen and (min-width: 1024px) {
   .join-title .hat {

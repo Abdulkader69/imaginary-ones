@@ -630,6 +630,125 @@ ul.main-nav li.active span.bg {
   left: 50%;
   top: -20%;
 }
+.preloader-rainbow::before {
+  content: '';
+  padding-top: 45%;
+  display: block;
+}
+.preloader-rainbow svg {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+.preloader-rainbow svg rect {
+  fill: #fff;
+}
+.preloader-rainbow svg > rect {
+  fill: #fff2f2;
+  -webkit-mask: url(#preloader-mask);
+  mask: url(#preloader-mask);
+}
+.animation-heartbeat {
+  animation: heartbeat 2s ease infinite;
+}
+@-webkit-keyframes heartbeat {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform: scale(1.05);
+  }
+  30% {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes heartbeat {
+  0% {
+    transform: scaleY(1);
+  }
+  10% {
+    transform: scale(1.05);
+  }
+  30% {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+#scene {
+  pointer-events: auto !important;
+}
+#scene .why-item {
+  display: inline-block !important;
+}
+#scene .why-item.one {
+  top: 17% !important;
+  left: 20% !important;
+}
+#scene .why-item.two {
+  left: 10% !important;
+  top: auto !important;
+}
+#scene .why-item.three {
+  top: 11% !important;
+  left: auto !important;
+}
+#scene .why-item.four {
+  top: auto !important;
+  left: auto !important;
+}
+#scene .why-item.five {
+  top: 40px !important;
+  left: 50px !important;
+}
+#scene .why-item.six {
+  top: -100px !important;
+  right: calc(50% - 115px);
+  left: auto !important;
+}
+#scene .why-item.seven {
+  top: 170px !important;
+  right: 25px;
+  left: auto !important;
+}
+#scene .why-item.eight {
+  bottom: -100px;
+  left: -50px !important;
+  top: auto !important;
+}
+#scene .why-item.nine {
+  bottom: 50px;
+  left: 50% !important;
+  top: auto !important;
+}
+#scene .why-item.ten {
+  bottom: -170px;
+  right: -150px;
+  left: auto !important;
+  top: auto !important;
+}
+#scene .why-item.ten img {
+  filter: blur(5px);
+}
+#scene .why-item.nine img {
+  filter: blur(1px);
+}
+#scene .why-item.eight img {
+  filter: blur(5px);
+}
+#scene .why-item.six img {
+  filter: blur(5px);
+}
+#scene .why-item.five img {
+  filter: blur(2px);
+}
 
 @media screen and (min-width: 1024px) {
   .join-title .hat {

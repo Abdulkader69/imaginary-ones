@@ -13,6 +13,12 @@ export default function Header() {
     });
   }, []);
   const router = useRouter();
+
+  const handleMenuRoute = (route: string) => {
+    setShowMenu(false);
+    router.push(route);
+  };
+
   return (
     <>
       <header
@@ -321,7 +327,16 @@ export default function Header() {
               >
                 <span className="bg absolute top-0 left-0 w-full h-full bg-[#fd0] -z-10 transition ease-in translate-y-[110%] group-hover:translate-y-0"></span>
                 <span className="text leading-3 relative top-1 transition ease-in group-hover:text-black">
-                  <Link href="/">home</Link>
+                  {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleMenuRoute('/');
+                    }}
+                  >
+                    home
+                  </a>
                 </span>
               </li>
               <li
@@ -333,7 +348,16 @@ export default function Header() {
               >
                 <span className="bg absolute top-0 left-0 w-full h-full bg-[#fd0] -z-10 transition ease-in translate-y-[110%] group-hover:translate-y-0"></span>
                 <span className="text leading-3 relative top-1 transition ease-in group-hover:text-black">
-                  <Link href="/imaginary-world">Imaginary World</Link>
+                  {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                  <a
+                    href="/imaginary-world"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleMenuRoute('/imaginary-world');
+                    }}
+                  >
+                    Imaginary World
+                  </a>
                 </span>
               </li>
               <li
@@ -359,7 +383,16 @@ export default function Header() {
               >
                 <span className="bg absolute top-0 left-0 w-full h-full bg-[#fd0] -z-10 transition ease-in translate-y-[110%] group-hover:translate-y-0"></span>
                 <span className="text leading-3 relative top-1 transition ease-in group-hover:text-black">
-                  <Link href="/careers">Careers</Link>
+                  {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                  <a
+                    href="/careers"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleMenuRoute('/careers');
+                    }}
+                  >
+                    Careers
+                  </a>
                 </span>
               </li>
               <li

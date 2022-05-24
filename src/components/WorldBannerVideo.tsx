@@ -1,36 +1,51 @@
-import React from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
+import useViewport from '../hooks/useViewport';
 import BannerImg from '../assets/images/key-visual-desktop.jpg';
 import BannerVideoMP4D from '../assets/videos/ioworld-desktop.mp4';
 import BannerVideoMP4M from '../assets/videos/ioworld-mobile.mp4';
 
 const WorldBannerVideo = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const { width } = useViewport();
+
+  useEffect(() => {
+    setTimeout(() => {
+      videoRef.current?.play();
+    }, 500);
+  }, []);
+
   return (
     <>
       <div
         id="first-section"
         className="home-banner-wrapper relative w-full h-screen flex items-center justify-center overflow-hidden"
       >
-        <video
-          className="absolute top-0 left-0 right-0 m-auto scale-105 object-cover w-full h-full transition ease-in-out hidden md:block"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster={BannerImg.src}
-        >
-          <source data-src={BannerVideoMP4D} src={BannerVideoMP4D} />
-        </video>
-        <video
-          className="absolute top-0 left-0 right-0 m-auto scale-105 object-cover w-full h-full transition ease-in-out block md:hidden"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster={BannerImg.src}
-        >
-          <source data-src={BannerVideoMP4M} src={BannerVideoMP4M} />
-        </video>
+        {width > 767 ? (
+          <video
+            ref={videoRef}
+            className="absolute top-0 left-0 right-0 m-auto scale-105 object-cover w-full h-full transition ease-in-out hidden md:block"
+            // autoPlay
+            loop
+            muted
+            playsInline
+            poster={BannerImg.src}
+          >
+            <source data-src={BannerVideoMP4D} src={BannerVideoMP4D} />
+          </video>
+        ) : (
+          <video
+            className="absolute top-0 left-0 right-0 m-auto scale-105 object-cover w-full h-full transition ease-in-out block md:hidden"
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={BannerImg.src}
+          >
+            <source data-src={BannerVideoMP4M} src={BannerVideoMP4M} />
+          </video>
+        )}
+
         <Link to="target" spy={true} smooth={true} duration={500}>
           {' '}
           <div className="absolute left-1/2 bottom-8 z-10 -translate-x-1/2 text-center cursor-pointer">

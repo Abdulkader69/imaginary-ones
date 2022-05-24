@@ -32,6 +32,7 @@ const ParallaxBanner = ({
   const [changeImage2, setChangeImage2] = useState<boolean>(false);
   const [changeImage3, setChangeImage3] = useState<boolean>(false);
   const [changeImage4, setChangeImage4] = useState<boolean>(false);
+
   return (
     <div
       id="loading-screen-wrap"
@@ -136,7 +137,9 @@ const ParallaxBanner = ({
         >
           <button
             type="button"
-            onClick={() => setExplore(true)}
+            onClick={() => {
+              setExplore(true);
+            }}
             className="bg-[#8459ff] tracking-wide font-filson font-bold px-10 py-4 rounded-full uppercase text-white animation-heartbeat"
           >
             Let&apos;s Explore

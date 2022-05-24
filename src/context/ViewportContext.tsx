@@ -1,0 +1,40 @@
+import { createContext, useEffect, useState } from 'react';
+
+export const ViewportContext = createContext({});
+
+export const ViewportProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+  let resizeID: ReturnType<typeof setTimeout>;
+
+  const doneResizing = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  };
+
+  const handleWindowResize = () => {
+    clearTimeout(resizeID);
+    resizeID = setTimeout(doneResizing, 500);
+  };
+
+  /* eslint react-hooks/exhaustive-deps: "off" */
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+
+    // Trigger on window resize function
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => window.removeEventListener('resize', handleWindowResize);
+  });
+
+  return (
+    <ViewportContext.Provider value={{ width, height }}>
+      {children}
+    </ViewportContext.Provider>
+  );
+};

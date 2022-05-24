@@ -148,7 +148,7 @@ const ParallaxBanner = ({
         className="preloader-items absolute w-full h-full top-0 left-0"
       >
         <div
-          className="why-item one absolute left-[20%] top-[17%] w-[300px] h-[300px] z-10"
+          className="why-item hidden one absolute left-[20%] top-[17%] w-[200px] xl:w-[300px] h-[200px] xl:h-[300px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration1 w-full h-full">
@@ -167,7 +167,7 @@ const ParallaxBanner = ({
           </div>
         </div>
         <div
-          className="why-item two absolute left-[10%] bottom-[3%] w-[370px] h-[380px] z-10"
+          className="why-item two absolute left-[10%] bottom-[3%] w-[270px] xl:w-[370px] h-[280px] xl:h-[380px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration2 w-full h-full">
@@ -186,7 +186,7 @@ const ParallaxBanner = ({
           </div>
         </div>
         <div
-          className="why-item three absolute right-[25%] top-[11%] w-[220px] h-[230px] z-10"
+          className="why-item hidden three absolute right-[25%] top-[11%] w-[150px] xl:w-[220px] h-[150px] xl:h-[230px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration3 w-full h-full">
@@ -205,7 +205,7 @@ const ParallaxBanner = ({
           </div>
         </div>
         <div
-          className="why-item four absolute right-[7%] bottom-[22%] w-[300px] h-[300px] z-10"
+          className="why-item four absolute right-[7%] bottom-[22%] w-[200px] xl:w-[300px] h-[200px] xl:h-[300px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration4 w-full h-full">
@@ -225,7 +225,7 @@ const ParallaxBanner = ({
         </div>
 
         <div
-          className="why-item five w-[220px] h-[220px] z-10"
+          className="why-item five w-[120px] lg:w-[220px] h-[120px] lg:h-[220px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration1 w-full h-full">
@@ -234,7 +234,10 @@ const ParallaxBanner = ({
             </div>
           </div>
         </div>
-        <div className="why-item six w-[230px] h-[230px] z-10" data-depth="0.1">
+        <div
+          className="why-item six w-[130px] lg:w-[230px] h-[130px] lg:h-[230px] z-10"
+          data-depth="0.1"
+        >
           <div className="floating duration2 w-full h-full">
             <div className="absolute cursor-pointer w-full pointer-events-none">
               <img src={Ball2.src} alt="Ball2" />
@@ -242,7 +245,7 @@ const ParallaxBanner = ({
           </div>
         </div>
         <div
-          className="why-item seven w-[240px] h-[240px] z-10"
+          className="why-item seven w-[140px] lg:w-[240px] h-[140px] lg:h-[240px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration3 w-full h-full">
@@ -252,7 +255,7 @@ const ParallaxBanner = ({
           </div>
         </div>
         <div
-          className="why-item eight w-[300px] h-[300px] z-10"
+          className="why-item eight w-[200px] lg:w-[300px] h-[200px] lg:h-[300px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration4 w-full h-full">
@@ -262,7 +265,7 @@ const ParallaxBanner = ({
           </div>
         </div>
         <div
-          className="why-item nine w-[150px] h-[150px] z-10"
+          className="why-item nine w-[100px] lg:w-[150px] h-[100px] lg:h-[150px] z-10"
           data-depth="0.1"
         >
           <div className="floating duration1 w-full h-full">
@@ -271,7 +274,10 @@ const ParallaxBanner = ({
             </div>
           </div>
         </div>
-        <div className="why-item ten w-[400px] h-[400px] z-10" data-depth="0.1">
+        <div
+          className="why-item ten w-[300px] lg:w-[400px] h-[300px] lg:h-[400px] z-10"
+          data-depth="0.1"
+        >
           <div className="floating duration3 w-full h-full">
             <div className="absolute cursor-pointer w-full pointer-events-none">
               <img src={Ball6.src} alt="Ball6" />

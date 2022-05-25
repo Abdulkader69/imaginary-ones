@@ -9,11 +9,11 @@ const Why = () => {
   const [changeImage, setChangeImage] = useState<boolean>(false);
   const [changeImage2, setChangeImage2] = useState<boolean>(false);
   return (
-    <div className="why-section py-40 bg-[#eefff7] relative overflow-hidden">
-      <div className="first-layer relative max-w-[1100px] m-auto z-10 px-7 z-20">
-        <h2 className="headline text-9xl font-filson text-[#8459ff] font-extrabold uppercase">
-          <div className="blcok relative">
-            <div className="inline-block relative mr-8">
+    <div className="why-section pt-40 pb-60 bg-[#eefff7] relative overflow-hidden">
+      <div className="first-layer relative max-w-[1100px] m-auto px-7 z-20">
+        <h2 className="headline text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-filson text-[#8459ff] font-extrabold uppercase">
+          <div className="block relative">
+            <div className="inline-block relative mr-4 xl:mr-6 2xl:mr-8">
               <div className=" inline-block">W</div>
               <div className=" inline-block">h</div>
               <div className=" inline-block">y</div>
@@ -23,7 +23,7 @@ const Why = () => {
               <div className="relative inline-block">e</div>
             </div>
           </div>
-          <div className="blcok relative text-[#fd0]">
+          <div className="block relative text-[#fd0]">
             <div className="inline-block relative">
               <div className="relative inline-block">I</div>
               <div className="relative inline-block">m</div>
@@ -38,7 +38,7 @@ const Why = () => {
             </div>
           </div>
         </h2>
-        <div className="why-text text-2xl text-black mt-8 leading-[1.4]">
+        <div className="why-text text-xl 2xl:text-2xl text-black mt-8 leading-[1.4]">
           <p className="mb-8">
             When we were young, we dreamt of being superheroes. Anything and
             everything seemed possible. However, as time went by, the reality of
@@ -56,14 +56,14 @@ const Why = () => {
           <p className="mb-8">Let&apos;s imagine. Together.</p>
         </div>
       </div>
-      <div className="why-item floating absolute top-0 left-0 w-full h-full duration1">
+      <div className="why-item hidden md:inline-block floating absolute top-0 left-0 w-full h-full duration1">
         <Draggable defaultPosition={{ x: 0, y: 0 }}>
-          <div className="absolute -bottom-[170px] -right-[150px]">
+          <div className="absolute -bottom-[270px] 2xl:-bottom-[170px] -right-[250px] 2xl:-right-[150px]">
             <img src={BallPink.src} alt="BallPink" />
           </div>
         </Draggable>
       </div>
-      <div className="why-item floating absolute top-0 left-0 w-full h-full duration2">
+      <div className="why-item floating absolute -top-[15%] 2xl:top-0 -left-[10%] 2xl:left-0 w-full h-full duration2">
         <Draggable defaultPosition={{ x: 0, y: 0 }}>
           <div className="absolute -left-[220px] top-[10px]">
             <img
@@ -74,7 +74,7 @@ const Why = () => {
           </div>
         </Draggable>
       </div>
-      <div className="why-item floating absolute right-[5%] top-[23%] w-[320px] h-[320px] duration3 z-10">
+      <div className="why-item floating absolute hidden md:inline-block right-0 lg:right-[5%] -top-[5%] lg:top-[5%] 2xl:top-[23%] w-[320px] h-[320px] duration3 z-10">
         <Draggable defaultPosition={{ x: 0, y: 0 }}>
           <div
             className="absolute cursor-pointer"
@@ -88,7 +88,7 @@ const Why = () => {
           </div>
         </Draggable>
       </div>
-      <div className="why-item floating absolute bottom-[5%] left-[2%] w-[360px] h-[360px] duration4 z-10">
+      <div className="why-item floating absolute -bottom-[5%] 2xl:bottom-[5%] right-0 md:right-auto md:left-0 2xl:left-[2%] w-[280px] 2xl:w-[360px] h-[280px] 2xl:h-[360px] duration4 z-10">
         <Draggable defaultPosition={{ x: 0, y: 0 }}>
           <div
             className="absolute cursor-pointer"

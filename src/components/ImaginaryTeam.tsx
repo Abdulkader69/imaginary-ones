@@ -12,9 +12,9 @@ import TeamItem from './TeamItem';
 
 const ImaginaryTeam = () => {
   return (
-    <div className="imaginary-team-wrapper bg-[#fbf2ff] overflow-hidden relative pb-52">
+    <div className="imaginary-team-wrapper bg-[#fbf2ff] overflow-hidden relative pb-20 lg:pb-40 2xl:pb-52">
       <div className="team-container w-full max-w-[1740px] m-auto px-7">
-        <h2 className="text-center text-[136px] text-[rgb(132,89,255)] pb-12 pt-32 leading-[1] font-filson uppercase font-extrabold">
+        <h2 className="text-center text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl text-[rgb(132,89,255)] pb-12 pt-20 lg:pt-32 leading-[1] font-filson uppercase font-extrabold">
           <span className="text-[#fd0]">Imaginary</span> Team
         </h2>
         <div className="flex flex-wrap justify-center">

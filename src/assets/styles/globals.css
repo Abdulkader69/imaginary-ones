@@ -317,7 +317,6 @@ a {
   mask: url(#maskblack);
 }
 .rainbow-text svg text {
-  font-size: 8rem;
   font-family: 'Filson Soft';
   font-weight: 900;
   text-transform: uppercase;
@@ -755,11 +754,39 @@ ul.main-nav li.active span.bg {
 #scene .why-item.four {
   display: none !important;
 }
+.rainbow-text svg text {
+  font-size: 2.25rem;
+}
 @media screen and (min-width: 1024px) {
   .join-title .hat {
     width: 160px;
     height: 80px;
     right: -80px;
     top: -20px;
+  }
+  .rainbow-text svg text {
+    font-size: 3.75rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .rainbow-text svg text {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .rainbow-text svg text {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 639px) {
+  .good__rotating-text {
+    font-size: 9vw;
+    --text-height: 9vw;
+  }
+  .good__rotating-text .rotating-text {
+    width: calc(100% - 25vw);
+  }
+  .good__rotating-text .rotating-text .text {
+    padding-top: 5px;
   }
 }

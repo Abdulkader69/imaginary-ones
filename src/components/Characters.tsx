@@ -7,44 +7,46 @@ import RainBowMP4 from '../assets/videos/rainbow-circle-black.mp4';
 
 const Characters = () => {
   return (
-    <div className="characters-section bg-[#fbf2ff] relative">
-      <div className="first-layer w-full max-w-5xl m-auto px-7 py-36">
-        <h2 className="text-9xl font-filson font-extrabold uppercase text-center">
-          <span className="inline-block pt-2 pr-5">8888</span>
-          <div className="rainbow-text inline-block align-top leading-[1.2] relative w-[594px] h-[140px]">
-            <video
-              className="relative m-auto w-full h-full object-cover transition ease-in-out"
-              autoPlay
-              loop
-              muted
-              playsInline
-              poster={RainBowIMG.src}
-            >
-              <source data-src={RainBowMP4} src={RainBowMP4} />
-            </video>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 594 145"
-              preserveAspectRatio="xMidYMid slice"
-            >
-              <defs>
-                <mask id="maskblack" x="0" y="0" width="100%" height="100%">
-                  <rect x="0" y="0" width="100%" height="100%"></rect>
-                  <text
-                    x="50%"
-                    y="50%"
-                    dominantBaseline="middle"
-                    textAnchor="middle"
-                  >
-                    Magical
-                  </text>
-                </mask>
-              </defs>
-              <rect x="0" y="0" width="100%" height="100%"></rect>
-            </svg>
+    <div className="characters-section bg-[#fbf2ff] relative overflow-hidden">
+      <div className="first-layer w-full max-w-5xl m-auto px-4 lg:px-7 py-20 lg:py-36">
+        <h2 className="text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-filson font-extrabold uppercase text-center">
+          <div className="div -mb-[90px] xl:-mb-[120px]">
+            <span className="inline-block pt-2 lg:pr-5">8888</span>
+            <div className="rainbow-text inline-block align-top leading-[1.2] relative w-[180px] lg:w-[290px] xl:w-[450px] 2xl:w-[594px] h-[140px] -mt-[42px] lg:-mt-[30px] xl:-mt-[15px] 2xl:mt-0">
+              <video
+                className="relative m-auto w-full h-full object-cover transition ease-in-out"
+                autoPlay
+                loop
+                muted
+                playsInline
+                poster={RainBowIMG.src}
+              >
+                <source data-src={RainBowMP4} src={RainBowMP4} />
+              </video>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 594 145"
+                preserveAspectRatio="xMidYMid slice"
+              >
+                <defs>
+                  <mask id="maskblack" x="0" y="0" width="100%" height="100%">
+                    <rect x="0" y="0" width="100%" height="100%"></rect>
+                    <text
+                      x="50%"
+                      y="50%"
+                      dominantBaseline="middle"
+                      textAnchor="middle"
+                    >
+                      Magical
+                    </text>
+                  </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%"></rect>
+              </svg>
+            </div>
           </div>
           <br />
-          characters
+          <span className="inline-block relative">characters</span>
         </h2>
       </div>
       <div className="collection-marquee relative overflow-auto py-5 w-full bg-white">

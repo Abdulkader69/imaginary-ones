@@ -20,26 +20,26 @@ const TeamItem = ({
   LinkedIn: string;
 }) => {
   return (
-    <div className="w-1/3 p-12">
+    <div className="w-full sm:w-1/2 lg:w-1/3 pb-4 pb-auto sm:p-2 md:p-4 2xl:p-12">
       <div className="team rounded-2xl shadow-arrow bg-white text-black overflow-hidden">
         <div
-          className={`head py-10 px-4 text-[1.7rem] font-filson font-extrabold text-white uppercase leading-[1] text-center ${HeadingBg}`}
+          className={`head py-6 2xl:py-10 px-4 text-xl 2xl:text-[1.7rem] font-filson font-extrabold text-white uppercase leading-[1] text-center ${HeadingBg}`}
         >
           {Heading}
         </div>
         <div className="p-4">
-          <div className="video w-full max-w-[220px] m-auto py-4">
+          <div className="video w-full max-w-[220px] m-auto py-2 2xl:py-4">
             <video autoPlay loop muted playsInline poster={VideoPoster}>
               <source data-src={Video} src={Video} />
             </video>
           </div>
-          <h2 className="font-filson text-4xl font-bold text-black mb-3 uppercase text-center">
+          <h2 className="font-filson text-2xl xl:text-3xl 2xl:text-4xl font-bold text-black mb-3 uppercase text-center">
             {Name}
           </h2>
-          <h3 className="font-filson text-xl font-normal text-black mb-5 uppercase text-center">
+          <h3 className="font-filson text-lg 2xl:text-xl font-normal text-black mb-5 uppercase text-center">
             {SubName}
           </h3>
-          <p className="text-xl font-normal text-black/60 mb-2 uppercase text-center w-full max-w-[80%] m-auto">
+          <p className="text-base md:text-lg 2xl:text-xl font-normal text-black/60 mb-2 uppercase text-center w-full max-w-[80%] m-auto">
             {Paragraph}
           </p>
         </div>
@@ -51,7 +51,7 @@ const TeamItem = ({
               x="0px"
               y="0px"
               viewBox="0 0 310 310"
-              className="w-7 h-7 transition ease-in group-hover:-translate-y-2"
+              className="w-5 lg:w-7 h-5 lg:h-7 transition ease-in group-hover:-translate-y-2"
             >
               <path
                 id="XMLID_827_"
@@ -80,7 +80,7 @@ C307.394,57.037,305.009,56.486,302.973,57.388z"
               x="0px"
               y="0px"
               viewBox="0 0 504.4 504.4"
-              className="w-7 h-7 transition ease-in group-hover:-translate-y-2"
+              className="w-5 lg:w-7 h-5 lg:h-7 transition ease-in group-hover:-translate-y-2"
             >
               <path
                 d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6

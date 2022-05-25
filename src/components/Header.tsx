@@ -30,8 +30,8 @@ export default function Header() {
             scroll ? 'translate-y-0' : '-translate-y-full'
           }`}
         ></div>
-        <div className="w-full max-w-[1800px] mx-auto px-7 flex items-center justify-between">
-          <div className="logo w-full max-w-[140px]">
+        <div className="w-full max-w-[1800px] mx-auto px-4 md:px-7 flex items-center justify-between">
+          <div className="logo w-full max-w-[100px] lg:max-w-[140px]">
             <Link href="/">
               <a>
                 <svg
@@ -106,7 +106,7 @@ export default function Header() {
           </div>
           <div className="menu-wrap flex items-center">
             <div
-              className="music-bar h-8 w-8 flex items-center justify-center cursor-pointer"
+              className="music-bar h-8 w-8 hidden md:flex items-center justify-center cursor-pointer"
               onClick={() => setMusicOnOff((prevMode) => !prevMode)}
             >
               {musicOnOff ? (
@@ -221,8 +221,10 @@ export default function Header() {
           onClick={() => setShowMenu((prevMode) => !prevMode)}
         ></div>
         <div
-          className={`side-bar w-[600px] overflow-hidden overflow-y-auto absolute right-0 top-0 h-full bg-[#8459ff] p-7 z-20 transition ease-in-out ${
-            showMenu ? 'translate-x-0' : 'translate-x-full'
+          className={`side-bar w-full sm:w-[600px] overflow-hidden overflow-y-auto absolute top-0 h-full bg-[#8459ff] p-7 z-20 transition ease-in ${
+            showMenu
+              ? 'translate-x-0 right-0'
+              : 'translate-x-full -right-[600px]'
           }`}
         >
           <div className="inner relative h-full">
@@ -321,7 +323,7 @@ export default function Header() {
             </div>
             <ul className="main-nav pb-16">
               <li
-                className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/' ? 'text-black active' : 'text-white'
                 }`}
               >
@@ -340,7 +342,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary-world'
                     ? 'text-black active'
                     : 'text-white'
@@ -361,7 +363,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'
@@ -375,7 +377,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`relative overflow-hidden rounded-full mb-2 py-1 px-6 w-max text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/careers'
                     ? 'text-black active'
                     : 'text-white'
@@ -396,7 +398,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'
@@ -410,7 +412,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'
@@ -424,7 +426,7 @@ export default function Header() {
                 </span>
               </li>
               <li
-                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[2.75rem] font-filson font-semibold uppercase group ${
+                className={`coming-soon relative overflow-hidden rounded-full mb-2 py-1 px-6 text-[1.5rem] sm:text-[2rem] lg:text-[2.75rem] font-filson font-semibold uppercase group ${
                   router.pathname == '/imaginary'
                     ? 'text-black active'
                     : 'text-white'

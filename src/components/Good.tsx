@@ -10,7 +10,7 @@ const Good = () => {
     <>
       <div className="good">
         <div className="flex flex-wrap">
-          <div className="w-1/3 flex items-center justify-center bg-[#e3a8ff] py-40">
+          <div className="w-full sm:w-2/5 lg:w-1/3 flex items-center justify-center bg-[#e3a8ff] py-20 sm:py-40">
             <div className="good__rotating-text">
               We are going to
               <div className="rotating-text">
@@ -26,9 +26,9 @@ const Good = () => {
               </span>
             </div>
           </div>
-          <div className="w-2/3 bg-[#fff1e4] text-center overflow-hidden relative">
+          <div className="w-full sm:w-3/5 lg:w-2/3 bg-[#fff1e4] text-center overflow-hidden relative">
             <video
-              className="m-auto w-auto absolute -top-[10%] h-[120%] block left-1/2 -translate-x-1/2"
+              className="m-auto w-auto relative sm:absolute sm:-top-[10%] sm:h-[120%] block left-1/2 -translate-x-1/2"
               autoPlay
               loop
               muted
@@ -40,7 +40,7 @@ const Good = () => {
           </div>
         </div>
         <div className="flex flex-wrap">
-          <div className="w-1/3 bg-[#8459ff] relative h-[286px]">
+          <div className="w-[calc(100%-200px)] sm:w-[calc(100%-290px)] md:w-1/3 bg-[#8459ff] relative md:h-[286px]">
             <div className="rainbow-text w-full h-full">
               <video
                 className="relative block w-full h-full object-cover transition ease-in-out"
@@ -74,7 +74,7 @@ const Good = () => {
               </svg>
             </div>
           </div>
-          <div className="w-[15%] bg-[#ffdbd2]">
+          <div className="w-[200px] sm:w-[290px] bg-[#ffdbd2]">
             <video
               className="w-full h-full block"
               autoPlay
@@ -86,7 +86,7 @@ const Good = () => {
               <source data-src={cmtVideo} src={cmtVideo} />
             </video>
           </div>
-          <div className="w-[51.666666%] overflow-hidden flex items-center bg-[#fd0]">
+          <div className="w-full md:w-[calc(100%-33.33%-291px)] overflow-hidden flex items-center bg-[#fd0] py-5 sm:py-10">
             <div className="collection-marquee relative w-full">
               <div className="inner w-fit flex relative animation-marquee">
                 <span className="text-[9vw] font-filson leading-[1] mt-3 font-extrabold px-2 text-black whitespace-nowrap uppercase w-[16.25rem] will-change-transform txt-shadow2 animation-marquee">

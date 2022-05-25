@@ -5,14 +5,14 @@ const Community = () => {
   return (
     <>
       <div className="relative bg-[#8459ff] overflow-hidden py-44">
-        <div className="w-full max-w-[1470px] px-7 m-auto z-10">
-          <h2 className="join-title text-[9.5rem] text-white font-filson font-extrabold leading-[1] uppercase">
+        <div className="w-full max-w-[1470px] px-7 m-auto z-10 relative">
+          <h2 className="join-title text-4xl lg:text-6xl xl:text-8xl 2xl:text-[9.5rem] text-white font-filson font-extrabold leading-[1] uppercase">
             join the <br />{' '}
             <span className="text-[#fd0] relative">
               Community <i className="hat"></i>
             </span>
           </h2>
-          <div className="text my-8 text-2xl leading-[1.4] text-white/80 font-light">
+          <div className="text my-8 text-lg lg:text-xl xl:text-2xl leading-[1.4] text-white/80 font-light">
             <p>
               We can&apos;t reply to all emails but all good vibes are
               appreciated!
@@ -26,35 +26,35 @@ const Community = () => {
               </a>
             </p>
           </div>
-          <ul className="social flex items-center justify-start mt-16">
-            <li className="item border-r border-solid border-white pr-4 mr-4 text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
+          <ul className="social flex flex-wrap items-center justify-start mt-16">
+            <li className="item mb-2 border-r border-solid border-white pr-4 mr-4 text-lg lg:text-xl xl:text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
               <a href="https://opensea.io/collection/io-imaginary-ones">
                 <span>Opensea</span>
               </a>
             </li>
-            <li className="item border-r border-solid border-white pr-4 mr-4 text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
+            <li className="item mb-2 border-r border-solid border-white pr-4 mr-4 text-lg lg:text-xl xl:text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
               <a href="https://foundation.app/collection/imaginary-ones">
                 <span>Foundation</span>
               </a>
             </li>
-            <li className="item border-r border-solid border-white pr-4 mr-4 text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
+            <li className="item mb-2 border-r border-solid border-white pr-4 mr-4 text-lg lg:text-xl xl:text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
               <a href="https://discord.gg/io-imaginary-ones">
                 <span>Discord</span>
               </a>
             </li>
-            <li className="item border-r border-solid border-white pr-4 mr-4 text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
+            <li className="item mb-2 border-r border-solid border-white pr-4 mr-4 text-lg lg:text-xl xl:text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
               <a href="https://twitter.com/imaginary_ones">
                 <span>Twitter</span>
               </a>
             </li>
-            <li className="item border-r border-solid border-white pr-4 mr-4 text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
+            <li className="item mb-2 text-lg lg:text-xl xl:text-2xl text-white/80 leading-5 transition ease-in hover:opacity-60 font-light">
               <a href="https://www.instagram.com/theimaginaryones/">
                 <span>Instagram</span>
               </a>
             </li>
           </ul>
         </div>
-        <div className="why-item floating absolute top-0 -left-[150px] duration1">
+        <div className="why-item floating absolute -top-[10%] lg:top-0 -left-[210px] lg:-left-[150px] duration1">
           <img src={BallBeige.src} alt="BallPink" />
         </div>
         <div className="why-item floating absolute w-[540px] -right-[150px] -bottom-[150px] duration2">

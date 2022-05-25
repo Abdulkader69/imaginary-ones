@@ -2,16 +2,18 @@ import { Disclosure, Transition } from '@headlessui/react';
 
 const FAQ = () => {
   return (
-    <div className="faq-section py-52">
+    <div className="faq-section py-20 lg:py-40 2xl:py-52">
       <div className="team-container w-full max-w-[1100px] m-auto px-7">
-        <h2 className="text-[136px] text-[rgb(132,89,255)] leading-[1] font-filson uppercase font-extrabold mb-12">
+        <h2 className="text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl text-[rgb(132,89,255)] leading-[1] font-filson uppercase font-extrabold mb-12">
           FAQ
         </h2>
         <Disclosure>
           {({ open }) => (
-            <div className="py-10 border-t border-b border-solid border-black/20">
-              <Disclosure.Button className="py-4 px-6 text-2xl font-filson font-bold text-black flex justify-between items-center w-full">
-                <span>Who&rsquo;s the team behind imaginary ones?</span>
+            <div className="py-5 lg:py-8 2xl:py-10 border-t border-b border-solid border-black/20">
+              <Disclosure.Button className="py-4 px-2 lg:px-6 text-xl xl:text-2xl font-filson font-bold text-black flex justify-between items-center w-full">
+                <span className="text-left pr-2">
+                  Who&rsquo;s the team behind imaginary ones?
+                </span>
                 <div className="btn h-[20px] w-[20px]">
                   <div className="h-[2px] w-[20px] bg-black relative top-[9px]"></div>
                   <div
@@ -31,7 +33,7 @@ const FAQ = () => {
                 leaveTo="transform scale-100 opacity-0"
               >
                 <Disclosure.Panel static>
-                  <div className="py-4 px-6 text-xl text-black/70 leading-[1.4] font-filson">
+                  <div className="py-2 lg:py-4 px-2 lg:px-6 text-base lg:text-xl text-black/70 leading-[1.4] font-filson">
                     <p className="mb-4">
                       We have been entrepreneurs and 3D motion artists for over
                       a decade. Our notable clients are Nike, Apple, Samsung,
@@ -61,9 +63,11 @@ const FAQ = () => {
         </Disclosure>
         <Disclosure>
           {({ open }) => (
-            <div className="py-10 border-t border-b border-solid border-black/20">
-              <Disclosure.Button className="py-4 px-6 text-2xl font-filson font-bold text-black flex justify-between items-center w-full">
-                <span>What makes imaginary ones so unique?</span>
+            <div className="py-5 lg:py-8 2xl:py-10 border-t border-b border-solid border-black/20">
+              <Disclosure.Button className="py-4 px-2 lg:px-6 text-xl xl:text-2xl font-filson font-bold text-black flex justify-between items-center w-full">
+                <span className="text-left pr-2">
+                  What makes imaginary ones so unique?
+                </span>
                 <div className="btn h-[20px] w-[20px]">
                   <div className="h-[2px] w-[20px] bg-black relative top-[9px]"></div>
                   <div
@@ -83,7 +87,7 @@ const FAQ = () => {
                 leaveTo="transform scale-100 opacity-0"
               >
                 <Disclosure.Panel static>
-                  <div className="py-4 px-6 text-xl text-black/70 leading-[1.4] font-filson">
+                  <div className="py-2 lg:py-4 px-2 lg:px-6 text-base lg:text-xl text-black/70 leading-[1.4] font-filson">
                     <p className="mb-4">
                       Imaginary Ones is the brainchild of an award-winning
                       creative director, Clement (Cmttat). We have positioned

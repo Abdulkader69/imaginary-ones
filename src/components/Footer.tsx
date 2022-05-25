@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="main-footer bg-black py-5 relative">
-        <div className="w-full ma-w-[1800px] m-auto px-7 flex items-center justify-between">
+        <div className="w-full ma-w-[1800px] m-auto px-4 md:px-7 flex items-center justify-between">
           <div className="absolute right-7 -top-[170px] z-20">
             <ScrollLink
               to="first-section"
@@ -28,14 +28,14 @@ const Footer = () => {
               </svg>{' '}
             </ScrollLink>
           </div>
-          <div className="text text-white text-sm">
+          <div className="text text-white text-sm mr-2">
             &copy; {new Date().getFullYear()} All Rights Reserved, Imaginary
             Ones Pte Ltd <br /> <a href="">Terms & Conditions</a>
           </div>
           <div className="logo">
             <Link href="/">
               <svg
-                className="w-[140px] h-auto"
+                className="w-[100px] md:w-[140px] h-auto"
                 viewBox="0 0 1016 475"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

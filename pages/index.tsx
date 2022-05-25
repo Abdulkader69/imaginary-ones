@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import BannerVideo from '../src/components/BannerVideo';
 import Characters from '../src/components/Characters';
@@ -10,8 +11,18 @@ import Community from '../src/components/Community';
 import Good from '../src/components/Good';
 import What from '../src/components/What';
 import RevealAnimation from '../src/components/RevealAnimation';
+import ParallaxBanner from '../src/components/ParallaxBanner';
 
 const Home: NextPage = () => {
+  const [loading, setLoading] = useState<boolean>(true);
+  const [explore, setExplore] = useState<boolean>(false);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="page-container">
       <Head>
@@ -20,17 +31,24 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <RevealAnimation />
-
-      <BannerVideo />
-      <What />
-      <Good />
-      <Why />
-      <Characters />
-      <ImaginaryValues />
-      <ImaginaryTeam />
-      <FAQ />
-      <Community />
+      {explore ? (
+        <>
+          <RevealAnimation />
+          <BannerVideo />
+          <What />
+          <Good />
+          <Why />
+          <Characters />
+          <ImaginaryValues />
+          <ImaginaryTeam />
+          <FAQ />
+          <Community />
+        </>
+      ) : (
+        <>
+          <ParallaxBanner loading={loading} setExplore={setExplore} />
+        </>
+      )}
     </div>
   );
 };

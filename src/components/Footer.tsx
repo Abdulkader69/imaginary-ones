@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="main-footer bg-black py-5 relative">
         <div className="w-full ma-w-[1800px] m-auto px-4 md:px-7 flex items-center justify-between">
-          <div className="absolute right-7 -top-[170px] z-20">
+          <div className="absolute right-7 -top-[70px] xl:-top-[170px] z-20">
             <ScrollLink
               to="first-section"
               spy={true}

@@ -778,6 +778,99 @@ ul.main-nav li.active span.bg {
     font-size: 8rem;
   }
 }
+@media screen and (max-width: 1535px) {
+  .phase.phase-one .media::before {
+    top: -31%;
+  }
+  .phase.phase-one .media::after {
+    bottom: -10.5%;
+  }
+  .phase.phase-one .media .media-list::after {
+    width: 110%;
+    left: -5%;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .phase.phase-one .media::before {
+    top: -35%;
+  }
+  .phase.phase-one .media::after {
+    bottom: -28%;
+  }
+  .phase.phase-one .media .media-list::after {
+    top: 43.9%;
+  }
+  .phase.phase-one .media .media-list::after {
+    width: 100%;
+    left: 0;
+  }
+  .phase.phase-three .media::after {
+    top: -65px;
+  }
+  .phase.phase-four .sidebar::before {
+    top: -25%;
+    height: 125%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .phase.phase-one .media::before {
+    border-width: 5px;
+  }
+  .phase.phase-one .media::after {
+    border-width: 5px;
+  }
+  .phase .media .media-list::after {
+    height: 5px;
+  }
+  .phase .sidebar::before {
+    width: 5px;
+  }
+  .phase.phase-three .media::before {
+    border-width: 5px;
+  }
+  .phase.phase-three .media::after {
+    border-width: 5px;
+  }
+  .phase.phase-five .media::after {
+    border-width: 5px;
+  }
+  .phase.phase-one .media::before {
+    top: -94%;
+  }
+  .phase.phase-one .media::after {
+    bottom: -86%;
+  }
+  .phase.phase-one .sidebar::before {
+    top: 10%;
+    height: 90%;
+  }
+  .phase.phase-three .media::after {
+    top: -140px;
+  }
+  .phase.phase-five .media::after {
+    top: -55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .phase.phase-one .media::before {
+    top: -222%;
+  }
+  .phase.phase-one .sidebar::before {
+    left: 60%;
+    height: 82%;
+  }
+  .phase.phase-one .media::after {
+    bottom: -218%;
+    right: 8.2%;
+  }
+  .phase.phase-three .media::before {
+    bottom: -45px;
+    left: 8.4%;
+  }
+  .phase.phase-four .media .media-list::after {
+    top: 20%;
+  }
+}
 @media screen and (max-width: 639px) {
   .good__rotating-text {
     font-size: 9vw;
@@ -788,5 +881,26 @@ ul.main-nav li.active span.bg {
   }
   .good__rotating-text .rotating-text .text {
     padding-top: 5px;
+  }
+  .phase.phase-one .media::before {
+    top: -148px;
+  }
+  .phase.phase-one .media::after {
+    bottom: -148px;
+  }
+  .phase.phase-one .sidebar::before {
+    height: 75%;
+  }
+  .phase.phase-five .media::after {
+    top: -96px;
+    right: 8%;
+  }
+  .phase.phase-five .media .media-list::after {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .phase.phase-one .media .media-list::after {
+    opacity: 0;
   }
 }

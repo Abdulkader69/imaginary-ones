@@ -20,7 +20,7 @@ const Careers: NextPage = () => {
           <div className="wrapper">
             <section
               id="home-banner"
-              className="main-banner careers-banner h-screen bg-[#fff2f2] flex justify-center content-center items-center overflow-hidden relative top-0 left-0 w-full p-0"
+              className="main-banner careers-banner h-screen bg-[#fff2f2] flex justify-center content-center lg:items-center items-start overflow-hidden relative top-0 left-0 w-full lg:p-0 pt-[20vh]"
             >
               <img
                 src={BannerImage.src}
@@ -29,11 +29,13 @@ const Careers: NextPage = () => {
               />
               <div className="main-banner__content relative z-[2] w-full">
                 <div className="container w-full p-3 mx-auto px-[30px] max-w-[1800px]">
-                  <h1 className="main-banner__title font-filson text-8xl lg:mb-12 font-black uppercase">
-                    <span className="block">Calling all</span>
-                    <span className="block text-[#8459ff]">dreamers</span>
+                  <h1 className="main-banner__title font-filson sm:text-[64px] lg:text-[80px] 2xl:text-8xl text-[28px] mb-8 lg:mb-12 font-black uppercase">
+                    <span className="block leading-[1]">Calling all</span>
+                    <span className="block leading-[1] text-[#8459ff]">
+                      dreamers
+                    </span>
                   </h1>
-                  <div className="main-banner__text text-black max-w-[600px] text-2xl">
+                  <div className="main-banner__text text-black max-w-[600px] sm:text-xl 2xl:text-2xl text-base">
                     <p className="mb-8">
                       We are looking for creative builders, creators, and
                       innovators. If you are one of the crazy ones who imagine a
@@ -68,7 +70,7 @@ const Careers: NextPage = () => {
                   <p className="text-base uppercase text-white mb-2 tracking-[2px]">
                     EXPLORE
                   </p>
-                  <div className="arrow w-14 h-14 m-auto bg-black rounded-full shadow-arrow flex items-center justify-center">
+                  <div className="arrow w-10 h-10 sm:w-14 sm:h-14 m-auto bg-black rounded-full shadow-arrow flex items-center justify-center">
                     <svg
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -87,10 +89,10 @@ const Careers: NextPage = () => {
             <section className="job-list overflow-hidden">
               <div id="target"></div>
               <div className="row flex flex-wrap flex-auto m-0">
-                <div className="col-md-6 col-12 basis-3/6 max-w-[50%] p-0">
+                <div className="md:basis-3/6 md:max-w-[50%] basis-full p-0">
                   <a
                     href="/careers/marketing-manager"
-                    className="job-list__item group p-[60px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
+                    className="job-list__item group sm:p-[60px] py-[50px] px-[30px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
                   >
                     <h3 className="job-list__title uppercase font-extrabold font-filson text-[#fd0] leading-[1] text-[32px]">
                       Marketing Manager
@@ -126,10 +128,10 @@ const Careers: NextPage = () => {
                     </svg>
                   </a>
                 </div>
-                <div className="col-md-6 col-12 basis-3/6 max-w-[50%] p-0">
+                <div className="md:basis-3/6 md:max-w-[50%] basis-full p-0">
                   <a
                     href="/careers/copywriter"
-                    className="job-list__item group p-[60px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
+                    className="job-list__item group sm:p-[60px] py-[50px] px-[30px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
                   >
                     <h3 className="job-list__title uppercase font-extrabold font-filson text-[#fd0] leading-[1] text-[32px]">
                       Copywriter
@@ -165,10 +167,10 @@ const Careers: NextPage = () => {
                     </svg>
                   </a>
                 </div>
-                <div className="col-md-6 col-12 basis-3/6 max-w-[50%] p-0">
+                <div className="md:basis-3/6 md:max-w-[50%] basis-full p-0">
                   <a
                     href="/careers/ui-ux-designer"
-                    className="job-list__item group p-[60px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
+                    className="job-list__item group sm:p-[60px] py-[50px] px-[30px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
                   >
                     <h3 className="job-list__title uppercase font-extrabold font-filson text-[#fd0] leading-[1] text-[32px]">
                       UI / UX Designer
@@ -204,10 +206,10 @@ const Careers: NextPage = () => {
                     </svg>
                   </a>
                 </div>
-                <div className="col-md-6 col-12 basis-3/6 max-w-[50%] p-0">
+                <div className="md:basis-3/6 md:max-w-[50%] basis-full p-0">
                   <a
                     href="/careers/3d-animator-motion-designer"
-                    className="job-list__item group p-[60px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
+                    className="job-list__item group sm:p-[60px] py-[50px] px-[30px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
                   >
                     <h3 className="job-list__title uppercase font-extrabold font-filson text-[#fd0] leading-[1] text-[32px]">
                       3D Animator / Motion Designer
@@ -243,10 +245,10 @@ const Careers: NextPage = () => {
                     </svg>
                   </a>
                 </div>
-                <div className="col-md-6 col-12 basis-3/6 max-w-[50%] p-0">
+                <div className="md:basis-3/6 md:max-w-[50%] basis-full p-0">
                   <a
                     href="/careers/3d-modeler"
-                    className="job-list__item group p-[60px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
+                    className="job-list__item group sm:p-[60px] py-[50px] px-[30px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
                   >
                     <h3 className="job-list__title uppercase font-extrabold font-filson text-[#fd0] leading-[1] text-[32px]">
                       3D Modeler
@@ -282,10 +284,10 @@ const Careers: NextPage = () => {
                     </svg>
                   </a>
                 </div>
-                <div className="col-md-6 col-12 basis-3/6 max-w-[50%] p-0">
+                <div className="md:basis-3/6 md:max-w-[50%] basis-full p-0">
                   <a
                     href="/careers/more-roles"
-                    className="job-list__item group p-[60px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
+                    className="job-list__item group sm:p-[60px] py-[50px] px-[30px] hover:bg-[#8459ff] bg-[#9773ff] block h-full w-full border border-solid border-white transition-colors duration-[.3s] ease-in-out relative text-left no-underline text-white"
                   >
                     <h3 className="job-list__title uppercase font-extrabold font-filson text-[#fd0] leading-[1] text-[32px]">
                       More Roles

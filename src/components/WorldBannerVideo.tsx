@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 import useViewport from '../hooks/useViewport';
-import BannerImg from '../assets/images/key-visual-desktop.jpg';
+import BannerImg from '../assets/images/ioworld-desktop.jpg';
+import BannerImgM from '../assets/images/ioworld-mobile.jpg';
 import BannerVideoMP4D from '../assets/videos/ioworld-desktop.mp4';
 import BannerVideoMP4M from '../assets/videos/ioworld-mobile.mp4';
 
@@ -40,7 +41,7 @@ const WorldBannerVideo = () => {
             loop
             muted
             playsInline
-            poster={BannerImg.src}
+            poster={BannerImgM.src}
           >
             <source data-src={BannerVideoMP4M} src={BannerVideoMP4M} />
           </video>

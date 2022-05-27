@@ -19,8 +19,8 @@ const Careers: NextPage = () => {
         <div className="v-main__wrap">
           <div className="wrapper">
             <section
-              id="home-banner"
-              className="main-banner careers-banner h-screen bg-[#fff2f2] flex justify-center content-center lg:items-center items-start overflow-hidden relative top-0 left-0 w-full lg:p-0 pt-[20vh]"
+              id="first-section"
+              className="main-banner mlg:h-auto mlg:flex-wrap careers-banner h-screen bg-[#fff2f2] flex justify-center content-center lg:items-center items-start overflow-hidden relative top-0 left-0 w-full lg:p-0 pt-[20vh]"
             >
               <img
                 src={BannerImage.src}
@@ -66,7 +66,7 @@ const Careers: NextPage = () => {
                     </div> */}
               <Link to="target" spy={true} smooth={true} duration={500}>
                 {' '}
-                <div className="absolute left-1/2 bottom-8 z-10 -translate-x-1/2 text-center cursor-pointer">
+                <div className="explore-btn absolute left-1/2 bottom-8 z-10 -translate-x-1/2 text-center cursor-pointer">
                   <p className="text-base uppercase text-white mb-2 tracking-[2px]">
                     EXPLORE
                   </p>

@@ -850,6 +850,16 @@ ul.main-nav li.active span.bg {
   .phase.phase-five .media::after {
     top: -55px;
   }
+  .careers-banner {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .explore-btn {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    bottom: inherit;
+    position: relative;
+  }
 }
 @media screen and (max-width: 767px) {
   .phase.phase-one .media::before {
